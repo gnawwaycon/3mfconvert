@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1024" height="1024">
+  <!-- Chunky Tinkaton for a 21 mm cap. Uses only the 5 loaded filament colors.
+       ~50 units = 1 mm on the cap, so every line and gap is kept >= 26 units (0.5 mm). -->
+  <defs>
+    <!-- hair: round dome on top, two big round lobes down to the ground, opening for the face -->
+    <path id="hood" d="M228,600 C190,470 270,365 400,365 C530,365 610,470 572,600
+                       C640,660 640,840 560,885 C505,910 470,880 468,840 C470,770 478,700 470,640
+                       C462,560 338,560 330,640 C322,700 330,770 332,840 C330,880 295,910 240,885
+                       C160,840 160,660 228,600 Z"/>
+    <clipPath id="hoodclip"><use href="#hood"/></clipPath>
+  </defs>
+  <rect width="1000" height="1000" fill="#FFFFFF"/>
+  <g stroke="#5A2D82" stroke-width="26" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- hammer handle and head, behind Tinkaton -->
+    <line x1="580" y1="875" x2="650" y2="380" stroke-width="116"/>
+    <line x1="580" y1="875" x2="650" y2="380" stroke="#D63A7A" stroke-width="64"/>
+    <g transform="translate(655,315) rotate(8)">
+      <rect x="-165" y="-118" width="330" height="236" rx="34" fill="#8C8F94"/>
+      <rect x="-26" y="-126" width="52" height="252" rx="12" fill="#D63A7A"/>
+      <rect x="-200" y="-140" width="58" height="280" rx="24" fill="#D63A7A"/>
+      <rect x="142" y="-140" width="58" height="280" rx="24" fill="#D63A7A"/>
+      <rect x="-118" y="-86" width="72" height="30" rx="15" fill="#FFFFFF" stroke="none"/>
+      <rect x="46" y="-86" width="72" height="30" rx="15" fill="#FFFFFF" stroke="none"/>
+    </g>
+
+    <!-- body and feet -->
+    <rect x="345" y="660" width="110" height="185" rx="46" fill="#D63A7A"/>
+    <ellipse cx="368" cy="858" rx="42" ry="28" fill="#D63A7A"/>
+    <ellipse cx="432" cy="858" rx="42" ry="28" fill="#D63A7A"/>
+
+    <!-- hair with zigzag bands and tuft -->
+    <path d="M365,380 Q400,290 435,380 Z" fill="#D63A7A"/>
+    <use href="#hood" fill="#F4B6C8"/>
+    <g clip-path="url(#hoodclip)" stroke="none" fill="#D63A7A">
+      <path d="M140,690 L200,655 L232,700 L268,655 L300,700 L345,668 L345,738 L300,770 L268,725 L232,770 L200,725 L140,760 Z"/>
+      <path d="M660,690 L600,655 L568,700 L532,655 L500,700 L455,668 L455,738 L500,770 L532,725 L568,770 L600,725 L660,760 Z"/>
+    </g>
+    <use href="#hood" fill="none"/>
+
+    <!-- face -->
+    <ellipse cx="400" cy="622" rx="118" ry="96" fill="#D63A7A"/>
+    <ellipse cx="356" cy="606" rx="34" ry="44" fill="#5A2D82" stroke="none"/>
+    <ellipse cx="444" cy="606" rx="34" ry="44" fill="#5A2D82" stroke="none"/>
+    <circle cx="367" cy="590" r="15" fill="#FFFFFF" stroke="none"/>
+    <circle cx="455" cy="590" r="15" fill="#FFFFFF" stroke="none"/>
+    <path d="M358,660 Q400,725 442,660 Z" fill="#5A2D82" stroke="none"/>
+
+    <!-- hand gripping the handle -->
+    <circle cx="600" cy="745" r="54" fill="#F4B6C8"/>
+    <circle cx="606" cy="752" r="18" fill="#D63A7A" stroke="none"/>
+  </g>
+</svg>

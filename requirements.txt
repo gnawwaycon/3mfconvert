@@ -1,0 +1,8 @@
+numpy
+shapely>=2.1
+manifold3d
+opencv-python-headless
+scikit-learn
+lxml
+matplotlib
+trimesh
